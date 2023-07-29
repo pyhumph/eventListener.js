@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<h1 id = "display">0</h1>
+<button id = "test">Increase</button>
+<button id = "testless">Decrease</button>
+
+<script>
+let dis = document.querySelector('#display');
+
+let counter = 0;
+
+const decrease = document.querySelector('#testless');
+		decrease.addEventListener('click',
+        function(){
+        counter = counter - 2
+        console.log(counter)
+        dis.innerText = counter
+        });
+        
+const button = document.querySelector('#test');
+      button.addEventListener('click', 
+      function(){
+      counter = counter + 2
+      console.log(counter)
+      dis.innerText = counter
+      });
+</script>
+</body>
+</html>
+
+
